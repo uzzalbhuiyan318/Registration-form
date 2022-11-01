@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        input[type=text],input[type=email],input[type=password]{
+            padding: 5px 10px;
+            width: 120%;
+           
+            border: 2px solid gray;
+            border-radius: 4px;
+            text-align: left;
+            
+        }       
+        input[type=number],input[type=date]{
+            padding: 5px 10px;
+            width: 120%;
+            
+            border: 2px solid gray;
+            border-radius: 4px;
+            
+        }
+        input[type=date]{
+            width: 120%;
+            padding: 5px 10px;
+           
+            border: 2px solid gray;
+            border-radius: 4px;
+        }
+        input[type=radio],input[type=checkbox]{
+            accent-color: red;
+        }
+        select{
+            width: 129%;
+            padding: 5px 10px;
+            
+            border: 2px solid gray;
+            border-radius: 4px;
+            
+        }
+        textarea{
+            padding: 5px 10px;
+            height: 100px;
+            border: 2px solid gray;
+            border-radius: 4px;
+            width: 120%;
+        }
+        button[type=submit],button[type=reset]{
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: antiquewhite;
+            border: 2px solid gray;
+            border-radius: 4px;
+        }
+       
+        .formatting{
+
+            background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+            background-position: -40% 10%;
+            position: absolute;
+            width: 17%;
+            padding-left: 40%;
+            padding-bottom: 2%;
+        }
+        h1{
+            background-color: slategrey;
+            width: 115%;
+           padding-left: 13%;
+           padding-bottom: 2%;
+           padding-top: 1.5%;
+           
+
+        
+        }
+        #gender{
+            color: slategrey;
+        }
+        #religion{
+            color: slategrey;
+        }
+    </style>
+</head>
+<body style="background-color: green;" class="formatting">
+    <h1>Registration Form</h1>
+    <form action="https://www.facebook.com/uzzalbhuiyan905" target="_blank">
+    <div>
+        <span id="lab"><label for="first name" style="background-color: slategrey; margin:auto"> <b>First Name:</b></label></span><br>
+        <input type="text" name="first name" id="first name" placeholder="enter your first name" > 
+        <br><br>
+
+    
+        <label for="Last name" style="background-color: slategrey; margin: auto; "><b>Last Name: </b></label><br>
+        <input type="text" name="last name" id="last name" placeholder="enter your last name" > 
+    <br><br>
+
+    
+        
+       <label for="email" style="background-color: slategrey; margin: auto ; "><b>Email:</b>  </label><br>
+        <input type="email" name="email" id="email" placeholder="enter your email" required> 
+   
+<br><br>
+    
+        <label for="password" style="background-color: slategrey; margin:auto; "><b>Password:</b>  </label><br>
+        <input type="password" name="password" id="password" placeholder="enter password" required> 
+    
+          <br>  <br>
+   
+        <label for="phone" style="background-color: slategrey; margin:auto ; "><b>Phone: </b> </label><br>
+        <input type="number" name="phone" id="phone" placeholder="enter phone number" required> 
+    
+<br><br>
+    
+        <label for="Gender" style="background-color: slategrey; margin: auto; " ><b>Gender: </b> </label><br>
+        <input type="radio" name="gender" id="gender" value="Male"><span id="gender">male</span> 
+        <input type="radio" name="gender" id="gender" value="female"><span id="gender">female</span> 
+        <input type="radio" name="gender" id="gender" value="others"><span id="gender">others</span>
+    
+
+   <br><br>
+        <label for="religion" style="background-color: slategrey " ><b>Religion:</b>  </label><br>
+        <input type="checkbox" name="religion" id="religion" value="Islam"> <span id="religion">Islam</span>
+        <input type="checkbox" name="religion" id="religion" value="Hindu"> <span id="religion">Hindu</span>
+        <input type="checkbox" name="religion" id="religion" value="others"> <span id="religion">Others</span>
+    
+
+   <br><br>
+        <label for="dob" style="background-color: slategrey "><b> DOB:</b> </label><br>
+        <input type="date" name="dob" id="dob"> 
+  
+    
+    <br><br>
+        <label for="Blood Group" style="background-color: slategrey "><b>Blood Group: </b> </label><br>
+        <select name="blood group" id="blood group">
+            <option value="b+" selected>B+</option>
+            <option value="b-">B-</option>
+            <option value="a+">A+</option>
+            <option value="a-">A+</option>
+            <option value="o+">O+</option>
+            <option value="o-">O-</option>
+            <option value="ab+">AB+</option>
+            <option value="ab-">AB-</option>
+        </select>
+<br><br>
+   
+
+    
+        <label for="image" style="background-color: slategrey "><b>Upload your photo: </b> </label><br>
+        <input type="file" name="image" id="image">
+    
+    
+    <br><br>
+        <label for="department" style="background-color: slategrey "><b>Department: </b> </label><br>
+        <select name="department" id="department">
+            <option value="cse" selected>CSE</option>
+            <option value="eee">EEE</option>
+            <option value="llb">LLB</option>
+            <option value="civil">CIVIL</option> 
+        </select><br><br>
+    
+
+
+        <label for="comment" style="background-color: slategrey "><b>Comment</b> </label> <br>
+        <textarea name="comment" id="comment" cols="31" rows="10" placeholder="enter your comment here"></textarea><br>
+  
+
+
+        <button type="submit"> <b>submit</b> </button>
+        <button type="reset"> <b>reset</b> </button>
+    </div>
+
+    </form>
+</body>
+</html>
